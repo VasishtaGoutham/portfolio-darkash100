@@ -76,10 +76,9 @@ export default function Navbar({ onReplay }) {
     <header className="fixed top-0 left-0 w-full z-50 bg-black/65 backdrop-blur-md border-b border-white/5 px-6 py-4 md:px-12 md:py-5 flex justify-between items-center select-none transition-all duration-300">
       <div 
         onClick={onReplay}
-        className="cursor-pointer font-sans text-xl md:text-2xl font-semibold text-white hover:text-brandYellow transition-colors duration-300"
-        style={{ fontFamily: "'Poppins', sans-serif" }}
+        className="cursor-pointer text-xl md:text-2xl font-bold text-white hover:text-brandYellow transition-colors duration-300"
       >
-        Vasishta Goutham Krishna
+        ᐯ卂丂丨丂卄ㄒ卂Ꮆㄖㄩㄒ卄卂爪Ҝ尺丨丂卄几卂
       </div>
 
       {/* Desktop Nav Links and Let's Talk CTA */}
