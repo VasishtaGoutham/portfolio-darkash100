@@ -76,7 +76,7 @@ export default function Navbar({ onReplay }) {
     <header className="fixed top-0 left-0 w-full z-50 bg-black/65 backdrop-blur-md border-b border-white/5 px-6 py-4 md:px-12 md:py-5 flex justify-between items-center select-none transition-all duration-300">
       <div 
         onClick={onReplay}
-        className="cursor-pointer text-xl md:text-2xl font-bold text-white hover:text-brandYellow transition-colors duration-300"
+        className="cursor-pointer text-xl md:text-2xl font-bold text-brandYellow transition-colors duration-300"
       >
         ᐯ卂丂丨丂卄ㄒ卂Ꮆㄖㄩㄒ卄卂爪Ҝ尺丨丂卄几卂
       </div>
