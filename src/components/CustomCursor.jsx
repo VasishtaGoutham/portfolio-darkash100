@@ -28,8 +28,9 @@ export default function CustomCursor() {
       
       // Stop the hover effect (scaling up & arrow icon) when hovering on "Let's Talk."
       const isLetsTalk = target.closest('.lets-talk-btn');
+      const isInSkills = target.closest('#skills');
 
-      if (isLetsTalk) {
+      if (isLetsTalk || isInSkills) {
         setIsHovered(false);
         return;
       }

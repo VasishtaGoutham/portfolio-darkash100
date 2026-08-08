@@ -70,12 +70,6 @@
   animation: marquee 16s linear infinite;
 }
 
-/* Hide default cursor on desktop screens that support pointer hover */
-@media (hover: hover) and (pointer: fine) {
-  html, body, a, button, input, textarea, select, [role="button"] {
-    cursor: none !important;
-  }
-}
 
 /* Timeline card style: transparent by default, frosted glass background blur and amber shadow only on hover */
 .timeline-card {
