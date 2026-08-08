@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent-color: #ECE7E1;
+    --bg-color: #000000;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  }
+}
+
+.font-signature {
+  font-family: 'Playball', 'Playfair Display', cursive;
+}
+
+/* Custom scrollbar styling matching reference */
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #2d2d2d;
+}
+::-webkit-scrollbar-thumb {
+  background: #9a9a9a;
+  border-radius: 7.5px;
+  border: 3.5px solid #2d2d2d;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+::-webkit-scrollbar-button {
+  display: block;
+  background-color: #2d2d2d;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16px;
+}
+/* Up arrow */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%239a9a9a'><polygon points='50,25 20,80 80,80'/></svg>");
+  background-size: 10px 10px;
+}
+/* Down arrow */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='%239a9a9a'><polygon points='50,75 20,20 80,20'/></svg>");
+  background-size: 10px 10px;
+}
+
+/* Morphing transition timings */
+.transition-bezier {
+  transition: all 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+/* Infinite Horizontal Marquee Scroll Track */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333333%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 16s linear infinite;
+}
+
+/* Hide default cursor on desktop screens that support pointer hover */
+@media (hover: hover) and (pointer: fine) {
+  html, body, a, button, input, textarea, select, [role="button"] {
+    cursor: none !important;
+  }
+}
+
+/* Timeline card style: transparent by default, frosted glass background blur and amber shadow only on hover */
+.timeline-card {
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+  border: none !important;
+  background-color: transparent !important;
+  border-radius: 10px !important;
+  padding: 24px !important;
+  margin-bottom: 32px !important;
+  display: flex !important;
+}
+
+.timeline-card:hover {
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  box-shadow: -15px 15px 45px rgba(245, 158, 11, 0.22) !important;
+  transform: translateY(-4px) !important;
+}
+
+
+
+
+
+
